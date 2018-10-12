@@ -32,6 +32,9 @@ before_script:
   ##
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
+  
+  - echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
 
   ##
   ## Optionally, if you will be using any Git commands, set the user name and
