@@ -51,7 +51,8 @@ deploy1:
   stage: deploy
   script:
     - echo "Do your deploy here"
-    - ssh root@$DEPLOY_SERVER_IP
+    - ssh root@$DEPLOY_SERVER_IP <<EOF
     - cd strapi-docker
     - ./update.sh
     - exit
+    - EOF
