@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "organizationsuggestion",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "days": {
+      "default": "",
+      "type": "integer"
+    },
+    "is_machine_readable": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

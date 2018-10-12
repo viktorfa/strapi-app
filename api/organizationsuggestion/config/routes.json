@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/organizationsuggestions",
+      "handler": "Organizationsuggestion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organizationsuggestions/count",
+      "handler": "Organizationsuggestion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/organizationsuggestions/:_id",
+      "handler": "Organizationsuggestion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/organizationsuggestions",
+      "handler": "Organizationsuggestion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/organizationsuggestions/:_id",
+      "handler": "Organizationsuggestion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/organizationsuggestions/:_id",
+      "handler": "Organizationsuggestion.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
