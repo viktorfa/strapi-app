@@ -44,29 +44,11 @@ after_script:
   - echo "After script section"
   - echo "For example you might do some cleanup here"
    
-build1:
-  stage: build
-  script:
-    - echo "Do your build here"
-   
-test1:
-  stage: test
-  script: 
-    - echo "Do a test here"
-    - echo "For example run a test suite"
-   
-test2:
-  stage: test
-  script: 
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
-   
 deploy1:
   stage: deploy
   script:
     - echo "Do your deploy here"
-    - ssh root@$DEPLOY_SERVER_IP <<EOF
+    - ssh root@$DEPLOY_SERVER_IP
     - cd strapi-docker
     - ./update.sh
     - exit
-    - EOF
