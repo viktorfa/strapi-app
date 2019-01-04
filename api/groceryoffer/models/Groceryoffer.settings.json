@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "groceryoffer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "source": {
+      "default": "",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
