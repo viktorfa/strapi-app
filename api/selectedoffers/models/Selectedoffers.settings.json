@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "selectedoffers",
   "info": {
     "name": "selectedoffers",
     "description": ""
@@ -37,7 +37,24 @@
       "default": "",
       "type": "date"
     },
-    "catalog_url": {
+    "catalog_page": {
+      "default": "",
+      "type": "integer"
+    },
+    "catalog_id": {
+      "default": "",
+      "type": "string"
+    },
+    "source": {
+      "default": "",
+      "type": "string"
+    },
+    "shopgun_id": {
+      "default": "",
+      "unique": true,
+      "type": "string"
+    },
+    "dealer_name": {
       "default": "",
       "type": "string"
     }
