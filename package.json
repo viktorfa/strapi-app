@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "lodash": "4.x.x",
-    "strapi": "3.0.0-alpha.21",
-    "strapi-hook-mongoose": "3.0.0-alpha.21"
+    "strapi": "3.0.0-alpha.23.1",
+    "strapi-hook-mongoose": "3.0.0-alpha.23.1"
   },
   "author": {
     "name": "A Strapi developer",
