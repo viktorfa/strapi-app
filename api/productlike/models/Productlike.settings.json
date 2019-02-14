@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "productlike",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "groceryoffer": {
+      "model": "groceryoffer"
+    },
+    "context": {
+      "default": "",
+      "type": "json"
+    },
+    "sender": {
+      "default": "",
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/productlikes",
+      "handler": "Productlike.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productlikes/count",
+      "handler": "Productlike.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productlikes/:_id",
+      "handler": "Productlike.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/productlikes",
+      "handler": "Productlike.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/productlikes/:_id",
+      "handler": "Productlike.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/productlikes/:_id",
+      "handler": "Productlike.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

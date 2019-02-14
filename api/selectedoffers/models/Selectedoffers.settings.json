@@ -52,11 +52,21 @@
     "shopgun_id": {
       "default": "",
       "unique": true,
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "dealer_name": {
       "default": "",
       "type": "string"
+    },
+    "select_method": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "automatic",
+        "manual",
+        "crowdsource"
+      ]
     }
   }
 }

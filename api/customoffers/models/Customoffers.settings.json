@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "customoffers",
+  "info": {
+    "name": "customoffers",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "heading": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "price": {
+      "default": "",
+      "type": "decimal"
+    },
+    "run_till": {
+      "default": "",
+      "type": "date"
+    },
+    "run_from": {
+      "default": "",
+      "type": "date"
+    },
+    "image_url": {
+      "default": "",
+      "type": "string"
+    },
+    "dealer_name": {
+      "default": "",
+      "type": "string"
+    },
+    "price_text": {
+      "default": "",
+      "type": "string"
+    },
+    "source": {
+      "default": "custom",
+      "type": "string"
+    }
+  }
+}

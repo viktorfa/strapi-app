@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customoffers",
+      "handler": "Customoffers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customoffers/count",
+      "handler": "Customoffers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customoffers/:_id",
+      "handler": "Customoffers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customoffers",
+      "handler": "Customoffers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customoffers/:_id",
+      "handler": "Customoffers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customoffers/:_id",
+      "handler": "Customoffers.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

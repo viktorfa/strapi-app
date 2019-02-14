@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "groceryoffer",
   "info": {
     "name": "groceryoffer",
     "description": ""
@@ -11,15 +11,72 @@
   "attributes": {
     "source": {
       "default": "",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "title": {
+    "heading": {
       "default": "",
       "type": "string"
     },
-    "subtitle": {
+    "description": {
       "default": "",
       "type": "string"
+    },
+    "run_from": {
+      "default": "",
+      "type": "date"
+    },
+    "run_till": {
+      "default": "",
+      "type": "date"
+    },
+    "quantity": {
+      "default": "",
+      "type": "json"
+    },
+    "geolocation": {
+      "default": "",
+      "type": "json"
+    },
+    "source_id": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "dealer": {
+      "default": "",
+      "type": "string"
+    },
+    "href": {
+      "default": "",
+      "type": "string"
+    },
+    "brand": {
+      "default": "",
+      "type": "string"
+    },
+    "image_url": {
+      "default": "",
+      "type": "string"
+    },
+    "uri": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "pricing": {
+      "default": "",
+      "type": "json"
+    },
+    "piece_value": {
+      "default": "",
+      "type": "json"
+    },
+    "quantity_value": {
+      "default": "",
+      "type": "json"
     }
   }
 }
