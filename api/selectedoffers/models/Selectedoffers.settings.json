@@ -55,7 +55,7 @@
       "type": "string",
       "required": true
     },
-    "dealer_name": {
+    "dealer": {
       "default": "",
       "type": "string"
     },
@@ -67,6 +67,10 @@
         "manual",
         "crowdsource"
       ]
+    },
+    "pricing": {
+      "default": "",
+      "type": "json"
     }
   }
 }

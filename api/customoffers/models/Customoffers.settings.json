@@ -33,7 +33,7 @@
       "default": "",
       "type": "string"
     },
-    "dealer_name": {
+    "dealer": {
       "default": "",
       "type": "string"
     },
@@ -43,6 +43,30 @@
     },
     "source": {
       "default": "custom",
+      "type": "string"
+    },
+    "pricing": {
+      "default": "",
+      "type": "json"
+    },
+    "likes": {
+      "default": "",
+      "type": "json"
+    },
+    "reports": {
+      "default": "",
+      "type": "json"
+    },
+    "location": {
+      "default": "",
+      "type": "json"
+    },
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "creator_id": {
+      "default": "",
       "type": "string"
     }
   }
