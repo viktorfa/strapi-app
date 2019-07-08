@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  api:
+    image: vikfand/strapi
+    environment:
+      - APP_NAME=strapi-app
+      - NODE_ENV=development
+      - DATABASE_CLIENT=mongo
+      - DATABASE_HOST=db
+      - HOST=localhost
+    env_file:
+      - .env
+    ports:
+      - 1337:1337
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mongo
+    env_file:
+      - .env
+    environment:
+      - MONGO_INITDB_DATABASE=${DATABASE_NAME}
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db:/data/db
+    restart: always

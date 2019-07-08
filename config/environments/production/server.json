@@ -1,5 +1,5 @@
 {
-  "host": "localhost",
+  "host": "strapi.vikfand.com",
   "port": "${process.env.PORT || 1337}",
   "proxy": {
     "enabled": false
@@ -8,6 +8,7 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false
+    "autoOpen": false,
+    "path": "/dashboard"
   }
 }
