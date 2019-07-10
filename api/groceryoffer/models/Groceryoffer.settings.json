@@ -6,10 +6,13 @@
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
-    "source": {
+    "provenance": {
       "default": "",
       "type": "string",
       "required": true
@@ -34,11 +37,11 @@
       "default": "",
       "type": "json"
     },
-    "geolocation": {
+    "location": {
       "default": "",
       "type": "json"
     },
-    "source_id": {
+    "provenance_id": {
       "default": "",
       "unique": true,
       "type": "string",
@@ -77,6 +80,27 @@
     "quantity_value": {
       "default": "",
       "type": "json"
+    },
+    "likes": {
+      "type": "json"
+    },
+    "reports": {
+      "type": "json"
+    },
+    "type": {
+      "type": "string"
+    },
+    "is_discounted": {
+      "type": "boolean"
+    },
+    "creator_id": {
+      "type": "string"
+    },
+    "select_method": {
+      "type": "string"
+    },
+    "is_promoted": {
+      "type": "boolean"
     }
   }
 }
