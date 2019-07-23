@@ -112,4 +112,6 @@ exports
 build
 
 .env
+.env.development
+.env.production
 db/
