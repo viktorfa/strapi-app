@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "synonym",
+  "info": {
+    "name": "synonym",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "synonyms": {
+      "type": "json"
+    },
+    "term": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}

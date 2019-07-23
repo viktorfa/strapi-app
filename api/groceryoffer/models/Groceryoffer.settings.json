@@ -43,9 +43,7 @@
     },
     "provenance_id": {
       "default": "",
-      "unique": true,
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "dealer": {
       "default": "",
@@ -87,9 +85,6 @@
     "reports": {
       "type": "json"
     },
-    "type": {
-      "type": "string"
-    },
     "is_discounted": {
       "type": "boolean"
     },
@@ -101,6 +96,15 @@
     },
     "is_promoted": {
       "type": "boolean"
+    },
+    "type": {
+      "default": "none",
+      "enum": [
+        "none",
+        "pepsi",
+        "grandis"
+      ],
+      "type": "enumeration"
     }
   }
 }

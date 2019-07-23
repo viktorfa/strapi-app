@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/headingtokens",
+      "handler": "Headingtoken.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/headingtokens/count",
+      "handler": "Headingtoken.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/headingtokens/:_id",
+      "handler": "Headingtoken.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/headingtokens",
+      "handler": "Headingtoken.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/headingtokens/:_id",
+      "handler": "Headingtoken.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/headingtokens/:_id",
+      "handler": "Headingtoken.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
