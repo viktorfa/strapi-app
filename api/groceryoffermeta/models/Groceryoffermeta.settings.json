@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "groceryoffermeta",
+  "info": {
+    "name": "groceryoffermeta",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "field": {
+      "required": true,
+      "type": "string"
+    },
+    "uri": {
+      "required": true,
+      "type": "string"
+    },
+    "type": {
+      "required": true,
+      "enum": [
+        "manual",
+        "crowdsource",
+        "ml",
+        "analytic"
+      ],
+      "type": "enumeration"
+    },
+    "value": {
+      "required": true,
+      "type": "json"
+    }
+  }
+}
