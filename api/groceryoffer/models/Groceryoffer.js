@@ -1,5 +1,7 @@
 'use strict';
 
+const _ = require('lodash');
+
 /**
  * Lifecycle callbacks for the `Groceryoffer` model.
  */
@@ -38,7 +40,25 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model) => {},
+  beforeUpdate: async (model) => {
+    const documentBefore = await model.model.findOne(model._conditions);
+    const objectBefore = JSON.parse(JSON.stringify(documentBefore));
+    const update = model._update;
+
+    const updates = _.omitBy(update, (value, key) =>
+      _.isEqual(value, objectBefore[key]),
+    );
+    const type = 'manual';
+    const uri = objectBefore.uri;
+    for (let [field, value] of Object.entries(updates)) {
+      strapi.services.groceryoffermeta.create({
+        field,
+        value,
+        type,
+        uri,
+      });
+    }
+  },
 
   // After updating a value.
   // Fired after an `update` query.
