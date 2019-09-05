@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Productlike` model.
+ * Lifecycle callbacks for the `Mpnoffermeta` model.
  */
 
 module.exports = {

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/productlikes",
-      "handler": "Productlike.find",
+      "path": "/mpnoffermetas",
+      "handler": "Mpnoffermeta.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/productlikes/count",
-      "handler": "Productlike.count",
+      "path": "/mpnoffermetas/count",
+      "handler": "Mpnoffermeta.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/productlikes/:_id",
-      "handler": "Productlike.findOne",
+      "path": "/mpnoffermetas/:_id",
+      "handler": "Mpnoffermeta.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/productlikes",
-      "handler": "Productlike.create",
+      "path": "/mpnoffermetas",
+      "handler": "Mpnoffermeta.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/productlikes/:_id",
-      "handler": "Productlike.update",
+      "path": "/mpnoffermetas/:_id",
+      "handler": "Mpnoffermeta.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/productlikes/:_id",
-      "handler": "Productlike.destroy",
+      "path": "/mpnoffermetas/:_id",
+      "handler": "Mpnoffermeta.delete",
       "config": {
         "policies": []
       }

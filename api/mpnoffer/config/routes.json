@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/organizations",
-      "handler": "Organization.find",
+      "path": "/mpnoffers",
+      "handler": "Mpnoffer.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/organizations/count",
-      "handler": "Organization.count",
+      "path": "/mpnoffers/count",
+      "handler": "Mpnoffer.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/organizations/:_id",
-      "handler": "Organization.findOne",
+      "path": "/mpnoffers/:_id",
+      "handler": "Mpnoffer.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/organizations",
-      "handler": "Organization.create",
+      "path": "/mpnoffers",
+      "handler": "Mpnoffer.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/organizations/:_id",
-      "handler": "Organization.update",
+      "path": "/mpnoffers/:_id",
+      "handler": "Mpnoffer.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/organizations/:_id",
-      "handler": "Organization.destroy",
+      "path": "/mpnoffers/:_id",
+      "handler": "Mpnoffer.delete",
       "config": {
         "policies": []
       }
