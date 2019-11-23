@@ -17,7 +17,7 @@
       "type": "string",
       "required": true
     },
-    "heading": {
+    "title": {
       "default": "",
       "type": "string"
     },
@@ -25,11 +25,11 @@
       "default": "",
       "type": "string"
     },
-    "run_from": {
+    "validFrom": {
       "default": "",
       "type": "date"
     },
-    "run_till": {
+    "validThrough": {
       "default": "",
       "type": "date"
     },
@@ -66,10 +66,6 @@
       "unique": true,
       "type": "string",
       "required": true
-    },
-    "pricing": {
-      "default": "",
-      "type": "json"
     },
     "likes": {
       "type": "json"
@@ -110,6 +106,12 @@
     "is_active": {
       "default": true,
       "type": "boolean"
+    },
+    "size": {
+      "type": "json"
+    },
+    "pieces": {
+      "type": "json"
     }
   }
 }
