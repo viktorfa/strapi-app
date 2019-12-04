@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/herbvuoffers",
+      "handler": "Herbvuoffer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/herbvuoffers/count",
+      "handler": "Herbvuoffer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/herbvuoffers/:id",
+      "handler": "Herbvuoffer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/herbvuoffers",
+      "handler": "Herbvuoffer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/herbvuoffers/:id",
+      "handler": "Herbvuoffer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/herbvuoffers/:id",
+      "handler": "Herbvuoffer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

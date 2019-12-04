@@ -1,0 +1,110 @@
+{
+  "connection": "default",
+  "collectionName": "herbvuoffer",
+  "info": {
+    "name": "herbvuoffer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": ["createdAt", "updatedAt"]
+  },
+  "attributes": {
+    "provenance": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "validFrom": {
+      "default": "",
+      "type": "date"
+    },
+    "validThrough": {
+      "default": "",
+      "type": "date"
+    },
+    "quantity": {
+      "default": "",
+      "type": "json"
+    },
+    "location": {
+      "default": "",
+      "type": "json"
+    },
+    "provenance_id": {
+      "default": "",
+      "type": "string"
+    },
+    "dealer": {
+      "default": "",
+      "type": "string"
+    },
+    "href": {
+      "default": "",
+      "type": "string"
+    },
+    "brand": {
+      "default": "",
+      "type": "string"
+    },
+    "image_url": {
+      "default": "",
+      "type": "string"
+    },
+    "uri": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "likes": {
+      "type": "json"
+    },
+    "reports": {
+      "type": "json"
+    },
+    "is_discounted": {
+      "type": "boolean"
+    },
+    "creator_id": {
+      "type": "string"
+    },
+    "select_method": {
+      "type": "string"
+    },
+    "is_promoted": {
+      "type": "boolean"
+    },
+    "type": {
+      "default": "none",
+      "enum": ["none", "pepsi", "grandis"],
+      "type": "enumeration"
+    },
+    "value": {
+      "type": "json"
+    },
+    "items": {
+      "type": "json"
+    },
+    "stock_status": {
+      "type": "string"
+    },
+    "is_active": {
+      "default": true,
+      "type": "boolean"
+    },
+    "size": {
+      "type": "json"
+    },
+    "pieces": {
+      "type": "json"
+    }
+  }
+}
