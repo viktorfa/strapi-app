@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Groceryoffer.js controller
@@ -7,14 +7,13 @@
  */
 
 module.exports = {
-
   /**
    * Retrieve groceryoffer records.
    *
    * @return {Object|Array}
    */
 
-  find: async (ctx) => {
+  find: async ctx => {
     if (ctx.query._q) {
       return strapi.services.groceryoffer.search(ctx.query);
     } else {
@@ -28,8 +27,8 @@ module.exports = {
    * @return {Object}
    */
 
-  findOne: async (ctx) => {
-    if (!ctx.params._id.match(/^[0-9a-fA-F]{24}$/)) {
+  findOne: async ctx => {
+    if (!ctx.params.id.match(/^[0-9a-fA-F]{24}$/)) {
       return ctx.notFound();
     }
 
@@ -42,7 +41,7 @@ module.exports = {
    * @return {Number}
    */
 
-  count: async (ctx) => {
+  count: async ctx => {
     return strapi.services.groceryoffer.count(ctx.query);
   },
 
@@ -52,7 +51,7 @@ module.exports = {
    * @return {Object}
    */
 
-  create: async (ctx) => {
+  create: async ctx => {
     return strapi.services.groceryoffer.add(ctx.request.body);
   },
 
@@ -63,7 +62,7 @@ module.exports = {
    */
 
   update: async (ctx, next) => {
-    return strapi.services.groceryoffer.edit(ctx.params, ctx.request.body) ;
+    return strapi.services.groceryoffer.edit(ctx.params, ctx.request.body);
   },
 
   /**

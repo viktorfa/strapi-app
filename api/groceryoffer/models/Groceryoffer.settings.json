@@ -6,10 +6,7 @@
     "description": ""
   },
   "options": {
-    "timestamps": [
-      "createdAt",
-      "updatedAt"
-    ]
+    "timestamps": ["createdAt", "updatedAt"]
   },
   "attributes": {
     "provenance": {
@@ -27,11 +24,11 @@
     },
     "validFrom": {
       "default": "",
-      "type": "date"
+      "type": "datetime"
     },
     "validThrough": {
       "default": "",
-      "type": "date"
+      "type": "datetime"
     },
     "quantity": {
       "default": "",
@@ -87,11 +84,7 @@
     },
     "type": {
       "default": "none",
-      "enum": [
-        "none",
-        "pepsi",
-        "grandis"
-      ],
+      "enum": ["none", "pepsi", "grandis"],
       "type": "enumeration"
     },
     "value": {

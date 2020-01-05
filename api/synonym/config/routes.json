@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/synonyms/:_id",
+      "path": "/synonyms/:id",
       "handler": "Synonym.findOne",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/synonyms/:_id",
+      "path": "/synonyms/:id",
       "handler": "Synonym.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/synonyms/:_id",
+      "path": "/synonyms/:id",
       "handler": "Synonym.delete",
       "config": {
         "policies": []

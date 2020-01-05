@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/mpnoffers/:_id",
+      "path": "/mpnoffers/:id",
       "handler": "Mpnoffer.findOne",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/mpnoffers/:_id",
+      "path": "/mpnoffers/:id",
       "handler": "Mpnoffer.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/mpnoffers/:_id",
+      "path": "/mpnoffers/:id",
       "handler": "Mpnoffer.delete",
       "config": {
         "policies": []

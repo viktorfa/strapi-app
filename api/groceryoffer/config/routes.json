@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/groceryoffers/:_id",
+      "path": "/groceryoffers/:id",
       "handler": "Groceryoffer.findOne",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/groceryoffers/:_id",
+      "path": "/groceryoffers/:id",
       "handler": "Groceryoffer.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/groceryoffers/:_id",
+      "path": "/groceryoffers/:id",
       "handler": "Groceryoffer.destroy",
       "config": {
         "policies": []

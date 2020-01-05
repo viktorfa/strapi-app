@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/mpnoffermetas/:_id",
+      "path": "/mpnoffermetas/:id",
       "handler": "Mpnoffermeta.findOne",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/mpnoffermetas/:_id",
+      "path": "/mpnoffermetas/:id",
       "handler": "Mpnoffermeta.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/mpnoffermetas/:_id",
+      "path": "/mpnoffermetas/:id",
       "handler": "Mpnoffermeta.delete",
       "config": {
         "policies": []

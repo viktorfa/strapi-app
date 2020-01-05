@@ -14,6 +14,10 @@
       "type": "string",
       "required": true
     },
+    "categories": {
+      "default": "",
+      "type": "json"
+    },
     "title": {
       "default": "",
       "type": "string"
@@ -24,11 +28,11 @@
     },
     "validFrom": {
       "default": "",
-      "type": "date"
+      "type": "datetime"
     },
     "validThrough": {
       "default": "",
-      "type": "date"
+      "type": "datetime"
     },
     "quantity": {
       "default": "",

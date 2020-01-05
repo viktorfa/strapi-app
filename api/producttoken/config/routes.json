@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/producttokens/:_id",
+      "path": "/producttokens/:id",
       "handler": "Producttoken.findOne",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/producttokens/:_id",
+      "path": "/producttokens/:id",
       "handler": "Producttoken.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/producttokens/:_id",
+      "path": "/producttokens/:id",
       "handler": "Producttoken.destroy",
       "config": {
         "policies": []
