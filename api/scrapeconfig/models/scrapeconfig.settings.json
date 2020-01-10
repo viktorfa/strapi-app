@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "scrapeconfigs",
+  "info": {
+    "name": "Scrapeconfig"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "spider_name": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "crawl_kwargs": {
+      "type": "json"
+    },
+    "use_fargate": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "other_kwargs": {
+      "type": "json"
+    }
+  }
+}

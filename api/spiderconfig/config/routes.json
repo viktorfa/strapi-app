@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/spiderconfigs",
+      "handler": "spiderconfig.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spiderconfigs/count",
+      "handler": "spiderconfig.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spiderconfigs/:id",
+      "handler": "spiderconfig.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/spiderconfigs",
+      "handler": "spiderconfig.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/spiderconfigs/:id",
+      "handler": "spiderconfig.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/spiderconfigs/:id",
+      "handler": "spiderconfig.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

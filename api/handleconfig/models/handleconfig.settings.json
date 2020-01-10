@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Handleconfig"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "provenance": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "collection_name": {
+      "type": "string"
+    },
+    "extractQuantityFields": {
+      "type": "json"
+    },
+    "fields": {
+      "type": "json"
+    },
+    "additionalProperties": {
+      "type": "json"
+    }
+  },
+  "connection": "default",
+  "collectionName": "handleconfigs"
+}

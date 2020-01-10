@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Spiderconfig"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "spider_name": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "crawl_kwargs": {
+      "type": "json"
+    },
+    "use_fargate": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "other_kwargs": {
+      "type": "json"
+    }
+  },
+  "connection": "default",
+  "collectionName": "spiderconfigs"
+}

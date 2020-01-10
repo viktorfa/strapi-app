@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/headingtokens",
-      "handler": "Headingtoken.find",
+      "path": "/scrapeconfigs",
+      "handler": "scrapeconfig.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/headingtokens/count",
-      "handler": "Headingtoken.count",
+      "path": "/scrapeconfigs/count",
+      "handler": "scrapeconfig.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/headingtokens/:id",
-      "handler": "Headingtoken.findOne",
+      "path": "/scrapeconfigs/:id",
+      "handler": "scrapeconfig.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/headingtokens",
-      "handler": "Headingtoken.create",
+      "path": "/scrapeconfigs",
+      "handler": "scrapeconfig.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/headingtokens/:id",
-      "handler": "Headingtoken.update",
+      "path": "/scrapeconfigs/:id",
+      "handler": "scrapeconfig.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/headingtokens/:id",
-      "handler": "Headingtoken.delete",
+      "path": "/scrapeconfigs/:id",
+      "handler": "scrapeconfig.delete",
       "config": {
         "policies": []
       }

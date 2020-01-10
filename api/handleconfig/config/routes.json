@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/producttokens",
-      "handler": "Producttoken.find",
+      "path": "/handleconfigs",
+      "handler": "handleconfig.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/producttokens/count",
-      "handler": "Producttoken.count",
+      "path": "/handleconfigs/count",
+      "handler": "handleconfig.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/producttokens/:id",
-      "handler": "Producttoken.findOne",
+      "path": "/handleconfigs/:id",
+      "handler": "handleconfig.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/producttokens",
-      "handler": "Producttoken.create",
+      "path": "/handleconfigs",
+      "handler": "handleconfig.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/producttokens/:id",
-      "handler": "Producttoken.update",
+      "path": "/handleconfigs/:id",
+      "handler": "handleconfig.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/producttokens/:id",
-      "handler": "Producttoken.destroy",
+      "path": "/handleconfigs/:id",
+      "handler": "handleconfig.delete",
       "config": {
         "policies": []
       }
