@@ -7,11 +7,8 @@ services:
       - APP_NAME=strapi-app
       - DATABASE_CLIENT=mongo
       - DATABASE_HOST=db
+      - DATABASE_NAME=strapi
       - NODE_ENV=production
-      - PORT=1337
-      - VIRTUAL_HOST=strapi.vikfand.com
-      - LETSENCRYPT_HOST=strapi.vikfand.com
-      - LETSENCRYPT_EMAIL=vikfand@gmail.com
     ports:
       - 1337:1337
     depends_on:
@@ -24,13 +21,10 @@ services:
       - APP_NAME=strapi-app
       - DATABASE_CLIENT=mongo
       - DATABASE_HOST=db
+      - DATABASE_NAME=strapidev
       - NODE_ENV=development
-      - PORT=1338
-      - VIRTUAL_HOST=strapi-dev.vikfand.com
-      - LETSENCRYPT_HOST=strapi-dev.vikfand.com
-      - LETSENCRYPT_EMAIL=vikfand@gmail.com
     ports:
-      - 1338:1338
+      - 1338:1337
     depends_on:
       - db
     restart: always

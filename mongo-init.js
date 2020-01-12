@@ -1,13 +1,13 @@
-function generatePassword(
+const generatePassword = (
   length = 16,
   charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-) {
-  retVal = "";
-  for (var i = 0, n = charset.length; i < length; ++i) {
+) => {
+  let retVal = "";
+  for (let i = 0, n = charset.length; i < length; ++i) {
     retVal += charset.charAt(Math.floor(Math.random() * n));
   }
   return retVal;
-}
+};
 
 const users = [
   {
@@ -47,7 +47,22 @@ const users = [
   }
 ];
 
+//const result = users.map(db.createUser);
+
+for (let i = 0; i < users.length; i++) {
+  db.createUser(users[i]);
+}
+
+/*
 for (const x of users) {
   db.createUser(x);
 }
+*/
+
+//db.createUser(users[0]);
+
+// Create text index for offer collection
+// use strapi
+// db.groceryoffer.index({ title: "text" }, { default_language: "none" });
+
 printjson(users.map(x => ({ password: x.pwd, username: x.user })));
