@@ -1,38 +1,36 @@
-version: '3'
+version: "3"
 
 services:
-  api:
+  api-prod:
     image: vikfand/strapi
     environment:
       - APP_NAME=strapi-app
-      - NODE_ENV=production
       - DATABASE_CLIENT=mongo
       - DATABASE_HOST=db
-      - VIRTUAL_HOST=strapi.vikfand.com
-      - LETSENCRYPT_HOST=strapi.vikfand.com
-      - LETSENCRYPT_EMAIL=vikfand@gmail.com
-    env_file:
-      - .env
     ports:
       - 1337:1337
     depends_on:
       - db
     restart: always
+    env_file: .env.prod
+  api-dev:
+    image: vikfand/strapi-dev
+    environment:
+      - APP_NAME=strapi-app
+      - DATABASE_CLIENT=mongo
+      - DATABASE_HOST=db
+    ports:
+      - 1338:1338
+    depends_on:
+      - db
+    restart: always
+    env_file: .env.dev
 
   db:
-    image: mongo
+    image: mongo:3
     command: mongod --auth
-    env_file:
-      - .env
-    environment:
-      - MONGO_INITDB_DATABASE=${DATABASE_NAME}
     ports:
       - 27017:27017
     volumes:
       - ./db:/data/db
     restart: always
-
-networks:
-  default:
-    external:
-      name: webproxy
