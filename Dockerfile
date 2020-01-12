@@ -1,8 +1,6 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 WORKDIR /usr/src/api
-
-RUN echo "unsafe-perm = true" >> ~/.npmrc
 
 EXPOSE 1337
 
