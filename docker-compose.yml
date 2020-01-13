@@ -9,6 +9,10 @@ services:
       - DATABASE_HOST=db
       - DATABASE_NAME=strapi
       - NODE_ENV=production
+      - VIRTUAL_HOST=strapi.vikfand.com
+      - LETSENCRYPT_HOST=strapi.vikfand.com
+      - LETSENCRYPT_EMAIL=vikfand@gmail.com
+      - DATABASE_AUTHENTICATION_DATABASE=admin
     ports:
       - 1337:1337
     depends_on:
@@ -23,6 +27,10 @@ services:
       - DATABASE_HOST=db
       - DATABASE_NAME=strapidev
       - NODE_ENV=development
+      - VIRTUAL_HOST=strapi-dev.vikfand.com
+      - LETSENCRYPT_HOST=strapi-dev.vikfand.com
+      - LETSENCRYPT_EMAIL=vikfand@gmail.com
+      - DATABASE_AUTHENTICATION_DATABASE=admin
     ports:
       - 1338:1337
     depends_on:
@@ -38,3 +46,8 @@ services:
     volumes:
       - ./db:/data/db
     restart: always
+
+networks:
+  default:
+    external:
+      name: webproxy
