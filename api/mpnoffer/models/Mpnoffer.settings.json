@@ -14,7 +14,11 @@
       "type": "string",
       "required": true
     },
-    "heading": {
+    "categories": {
+      "default": "",
+      "type": "json"
+    },
+    "title": {
       "default": "",
       "type": "string"
     },
@@ -22,11 +26,11 @@
       "default": "",
       "type": "string"
     },
-    "run_from": {
+    "validFrom": {
       "default": "",
       "type": "datetime"
     },
-    "run_till": {
+    "validThrough": {
       "default": "",
       "type": "datetime"
     },
@@ -64,10 +68,6 @@
       "type": "string",
       "required": true
     },
-    "pricing": {
-      "default": "",
-      "type": "json"
-    },
     "likes": {
       "type": "json"
     },
@@ -103,6 +103,12 @@
     "is_active": {
       "default": true,
       "type": "boolean"
+    },
+    "size": {
+      "type": "json"
+    },
+    "pieces": {
+      "type": "json"
     }
   }
 }
