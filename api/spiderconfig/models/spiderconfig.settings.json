@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "spiderconfigs",
   "info": {
     "name": "Spiderconfig"
   },
@@ -23,8 +25,12 @@
     },
     "other_kwargs": {
       "type": "json"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "cron": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "spiderconfigs"
+  }
 }
