@@ -58,7 +58,7 @@
       "default": "",
       "type": "string"
     },
-    "image_url": {
+    "imageUrl": {
       "default": "",
       "type": "string"
     },
