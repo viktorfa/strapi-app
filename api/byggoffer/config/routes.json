@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/byggoffers",
+      "handler": "byggoffer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/byggoffers/count",
+      "handler": "byggoffer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/byggoffers/:id",
+      "handler": "byggoffer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/byggoffers",
+      "handler": "byggoffer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/byggoffers/:id",
+      "handler": "byggoffer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/byggoffers/:id",
+      "handler": "byggoffer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
