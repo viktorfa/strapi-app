@@ -40,7 +40,7 @@
       "default": "",
       "type": "json"
     },
-    "provenance_id": {
+    "provenanceId": {
       "default": "",
       "type": "string"
     },
@@ -72,9 +72,6 @@
     "reports": {
       "type": "json"
     },
-    "is_discounted": {
-      "type": "boolean"
-    },
     "creator_id": {
       "type": "string"
     },
@@ -94,9 +91,6 @@
     },
     "items": {
       "type": "json"
-    },
-    "stock_status": {
-      "type": "string"
     },
     "is_active": {
       "default": true,
