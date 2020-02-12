@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/groceryoffers/:id",
-      "handler": "Groceryoffer.destroy",
+      "handler": "Groceryoffer.delete",
       "config": {
         "policies": []
       }
