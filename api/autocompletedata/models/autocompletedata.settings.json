@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "autocompletedata"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "productCollection": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tokens": {
+      "type": "json"
+    }
+  },
+  "connection": "default",
+  "collectionName": "autocompletedata"
+}

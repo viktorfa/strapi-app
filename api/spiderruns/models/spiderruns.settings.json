@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "spiderruns",
+  "info": {
+    "name": "spiderruns"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "spider_name": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "datetime"
+    },
+    "updatedAt": {
+      "type": "datetime"
+    },
+    "crawl_status": {
+      "type": "string"
+    },
+    "crawl_id": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "feed_uri": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "crawl_kwargs": {
+      "type": "json"
+    },
+    "stats": {
+      "type": "json"
+    }
+  }
+}

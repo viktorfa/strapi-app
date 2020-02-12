@@ -20,6 +20,10 @@
       "default": "",
       "type": "string"
     },
+    "availability": {
+      "default": "",
+      "type": "string"
+    },
     "description": {
       "default": "",
       "type": "string"

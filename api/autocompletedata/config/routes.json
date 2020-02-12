@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/autocompletedata",
+      "handler": "autocompletedata.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/autocompletedata/count",
+      "handler": "autocompletedata.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/autocompletedata/:id",
+      "handler": "autocompletedata.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/autocompletedata",
+      "handler": "autocompletedata.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/autocompletedata/:id",
+      "handler": "autocompletedata.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/autocompletedata/:id",
+      "handler": "autocompletedata.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

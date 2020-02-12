@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/spiderruns",
+      "handler": "spiderruns.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spiderruns/count",
+      "handler": "spiderruns.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spiderruns/:id",
+      "handler": "spiderruns.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/spiderruns",
+      "handler": "spiderruns.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/spiderruns/:id",
+      "handler": "spiderruns.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/spiderruns/:id",
+      "handler": "spiderruns.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
