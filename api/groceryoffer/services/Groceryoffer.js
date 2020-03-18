@@ -16,7 +16,8 @@ module.exports = {
     // Convert `params` object to filters compatible with Mongo.
     const filters = strapi.utils.models.convertParams("groceryoffer", params);
 
-    return Groceryoffer.find()
+    return strapi.models.groceryoffer
+      .find()
       .where(filters.where)
       .select(defaultOfferFields.join(" "))
       .sort(filters.sort)

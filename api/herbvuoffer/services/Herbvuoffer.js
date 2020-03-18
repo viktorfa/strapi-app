@@ -16,7 +16,8 @@ module.exports = {
     // Convert `params` object to filters compatible with Mongo.
     const filters = strapi.utils.models.convertParams("herbvuoffer", params);
 
-    return Herbvuoffer.find()
+    return strapi.models.herbvuoffer
+      .find()
       .where(filters.where)
       .select(defaultOfferFields.join(" "))
       .sort(filters.sort)
