@@ -107,6 +107,9 @@
     },
     "pieces": {
       "type": "json"
+    },
+    "pricing": {
+      "type": "json"
     }
   }
 }
