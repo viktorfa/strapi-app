@@ -12,12 +12,6 @@
     "spider_name": {
       "type": "string"
     },
-    "createdAt": {
-      "type": "datetime"
-    },
-    "updatedAt": {
-      "type": "datetime"
-    },
     "crawl_status": {
       "type": "string"
     },
