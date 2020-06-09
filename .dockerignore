@@ -1,5 +1,7 @@
-.env
+.env*
 .cache/
 Dockerfile
 .editorconfig
 db/
+node_modules/
+build/

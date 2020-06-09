@@ -1,8 +1,5 @@
 #!/bin/bash
 
-yarn
-yarn build
-
 docker build -t vikfand/strapi-dev:latest .
 docker push vikfand/strapi-dev:latest
 
