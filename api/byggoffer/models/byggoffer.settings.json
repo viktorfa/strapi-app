@@ -20,6 +20,14 @@
       "default": "",
       "type": "string"
     },
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    },
+    "shortDescription": {
+      "default": "",
+      "type": "string"
+    },
     "availability": {
       "default": "",
       "type": "string"
