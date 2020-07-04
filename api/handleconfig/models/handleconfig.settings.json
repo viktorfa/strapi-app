@@ -23,6 +23,9 @@
     },
     "additionalProperties": {
       "type": "json"
+    },
+    "additionalConfig": {
+      "type": "json"
     }
   },
   "connection": "default",

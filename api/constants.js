@@ -1,6 +1,7 @@
 const defaultOfferFields = [
   "title",
   "description",
+  "shortDescription",
   "subtitle",
   "pricing",
   "dealer",
@@ -12,9 +13,9 @@ const defaultOfferFields = [
   "pieces",
   "provenance",
   "categories",
-  "quantity"
+  "quantity",
 ];
 
 module.exports = {
-  defaultOfferFields
+  defaultOfferFields,
 };
