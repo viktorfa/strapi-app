@@ -22,6 +22,14 @@
       "default": "",
       "type": "string"
     },
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    },
+    "shortDescription": {
+      "default": "",
+      "type": "string"
+    },
     "availability": {
       "default": "",
       "type": "string"
@@ -46,6 +54,10 @@
       "default": "",
       "type": "json"
     },
+    "gtins": {
+      "default": "",
+      "type": "json"
+    },
     "provenanceId": {
       "default": "",
       "type": "string"
@@ -59,6 +71,14 @@
       "type": "string"
     },
     "brand": {
+      "default": "",
+      "type": "string"
+    },
+    "vendor": {
+      "default": "",
+      "type": "string"
+    },
+    "model": {
       "default": "",
       "type": "string"
     },
@@ -93,19 +113,6 @@
       "type": "enumeration"
     },
     "value": {
-      "type": "json"
-    },
-    "items": {
-      "type": "json"
-    },
-    "is_active": {
-      "default": true,
-      "type": "boolean"
-    },
-    "size": {
-      "type": "json"
-    },
-    "pieces": {
       "type": "json"
     },
     "pricing": {

@@ -9,11 +9,11 @@ const defaultOfferFields = [
   "href",
   "imageUrl",
   "value",
-  "size",
-  "pieces",
   "provenance",
   "categories",
   "quantity",
+  "gtins",
+  "brand",
 ];
 
 module.exports = {
