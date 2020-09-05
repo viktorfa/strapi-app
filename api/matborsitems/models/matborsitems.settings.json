@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matborsitems",
+  "info": {
+    "name": "matborsitems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "bread",
+        "drinks",
+        "greens",
+        "meat",
+        "diary",
+        "palegg",
+        "snacks",
+        "dry",
+        "hygiene"
+      ]
+    },
+    "dealers": {
+      "type": "json"
+    }
+  }
+}

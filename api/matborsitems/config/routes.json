@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/matborsitems",
+      "handler": "matborsitems.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/matborsitems/count",
+      "handler": "matborsitems.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/matborsitems/:id",
+      "handler": "matborsitems.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/matborsitems",
+      "handler": "matborsitems.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/matborsitems/:id",
+      "handler": "matborsitems.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/matborsitems/:id",
+      "handler": "matborsitems.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
