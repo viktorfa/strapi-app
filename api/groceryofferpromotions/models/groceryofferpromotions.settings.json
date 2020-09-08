@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groceryofferpromotions",
+  "info": {
+    "name": "groceryofferpromotions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "groceryoffer": {
+      "model": "groceryoffer"
+    },
+    "validThrough": {
+      "type": "date",
+      "required": true
+    },
+    "select_method": {
+      "type": "enumeration",
+      "enum": ["auto", "manual"],
+      "default": "manual",
+      "required": true
+    }
+  }
+}

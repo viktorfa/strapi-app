@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/byggofferpromotions",
+      "handler": "byggofferpromotions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/byggofferpromotions/count",
+      "handler": "byggofferpromotions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/byggofferpromotions/:id",
+      "handler": "byggofferpromotions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/byggofferpromotions",
+      "handler": "byggofferpromotions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/byggofferpromotions/:id",
+      "handler": "byggofferpromotions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/byggofferpromotions/:id",
+      "handler": "byggofferpromotions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

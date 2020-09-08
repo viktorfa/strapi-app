@@ -1,4 +1,7 @@
 {
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "byggoffers",
   "info": {
     "name": "byggoffer"
   },
@@ -107,7 +110,11 @@
     },
     "type": {
       "default": "none",
-      "enum": ["none", "pepsi", "grandis"],
+      "enum": [
+        "none",
+        "pepsi",
+        "grandis"
+      ],
       "type": "enumeration"
     },
     "value": {
@@ -116,7 +123,5 @@
     "pricing": {
       "type": "json"
     }
-  },
-  "connection": "default",
-  "collectionName": "byggoffers"
+  }
 }

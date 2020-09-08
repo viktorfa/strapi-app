@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/groceryofferpromotions",
+      "handler": "groceryofferpromotions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groceryofferpromotions/count",
+      "handler": "groceryofferpromotions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groceryofferpromotions/:id",
+      "handler": "groceryofferpromotions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/groceryofferpromotions",
+      "handler": "groceryofferpromotions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/groceryofferpromotions/:id",
+      "handler": "groceryofferpromotions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/groceryofferpromotions/:id",
+      "handler": "groceryofferpromotions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
