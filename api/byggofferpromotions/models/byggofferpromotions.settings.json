@@ -13,12 +13,15 @@
       "model": "byggoffer"
     },
     "validThrough": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "select_method": {
       "type": "enumeration",
-      "enum": ["auto", "manual"],
+      "enum": [
+        "auto",
+        "manual"
+      ],
       "required": true,
       "default": "manual"
     }

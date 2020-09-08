@@ -13,7 +13,7 @@
       "model": "groceryoffer"
     },
     "validThrough": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "select_method": {
